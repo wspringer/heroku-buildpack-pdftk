@@ -24,3 +24,14 @@ BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi.git \
 PATH=[your current PATH var]:/app/vendor/pdftk/bin \
 LD_LIBRARY_PATH=[your current LD_LIBRARY_PATH var (if you have set before)]:/app/vendor/pdftk/lib
 ```
+
+For a standard heroku configuration the above will probably look like this:
+
+```bash
+heroku config:set \
+BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi.git \
+PATH=/app/bin:/app/vendor/bundle/bin:/app/vendor/bundle/ruby/2.1.0/bin:/usr/local/bin:/usr/bin:/bin:/app/vendor/pdftk/bin \
+LD_LIBRARY_PATH=/app/vendor/pdftk/lib
+```
+
+but check your path. ;)
