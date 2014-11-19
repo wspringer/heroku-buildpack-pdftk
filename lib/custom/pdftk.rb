@@ -9,7 +9,7 @@ class Pdftk < BaseCustom
   end
 
   def source_url
-    "https://raw2.github.com/millie/pdftk-source/master/pdftk.tar.gz"
+    "https://github.com/SirRawlins/pdftk-source/raw/master/pdftk.tar.gz"
   end
 
   def used?
